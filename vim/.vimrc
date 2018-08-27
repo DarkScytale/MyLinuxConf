@@ -143,7 +143,7 @@ set history=500
 
 " CONFIGURATION DE LA RECHERCHE {{{
 " -> Recherche case not sensitive.
-set smartcase¬
+set smartcase
 " }}}
 
 " DEFINITION DES RACCOURCIS {{{
