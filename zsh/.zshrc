@@ -95,7 +95,7 @@ function tmuxclean() {
 
 # Tools misc {{{
 function findall() {
-	find . -name "*" -exec grep "$1" {} \; -print 2>/dev/null
+	find . -type f -name "*" -exec grep "$1" {} \; -print 2>/dev/null
 }
 # }}}
 
