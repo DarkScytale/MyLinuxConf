@@ -1,4 +1,4 @@
-/bin/sh
+#!/bin/sh
 
 echo "STEP 0: Preparing variables"
 root_folder="~/MyLinuxConf"
