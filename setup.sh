@@ -7,7 +7,7 @@ root_folder_backup="~/MyLinuxConf.backup"
 echo "STEP 1: Preparing the environment"
 if [ -d ${root_folder} ]; then
 	rm -rf ${root_folder_backup}
-	mv ${root_folder} ${root_folder_backup}
+	cp -pR ${root_folder} ${root_folder_backup}
 fi
 
 echo "STEP 1: Getting clean new files ..."
