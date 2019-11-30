@@ -1,13 +1,13 @@
 #!/bin/sh
 
 echo "STEP 0: Preparing variables"
-root_folder="~/MyLinuxConf"
-root_folder_backup="~/MyLinuxConf.backup"
+cd ~
+root_folder=`pwd `/MyLinuxConf
 
 echo "STEP 1: Preparing the environment"
 if [ -d ${root_folder} ]; then
-	rm -rf ${root_folder_backup}
-	cp -pR ${root_folder} ${root_folder_backup}
+	rm -rf ${root_folder}".backup"
+	cp -pR ${root_folder} ${root_folder}.backup
 fi
 
 echo "STEP 1: Getting clean new files ..."
